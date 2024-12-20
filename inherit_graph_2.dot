@@ -1,0 +1,25 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="MonoBehaviour",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node0 -> Node1 [id="edge1_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="BackgroundManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_background_manager.html",tooltip="Manages the loading and display of backgrounds in the game."];
+  Node0 -> Node2 [id="edge2_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ButtonSelect",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_button_select.html",tooltip="Manages the selection state of a button in a quiz game. This class handles button color changes to in..."];
+  Node0 -> Node3 [id="edge3_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="DotSelectionManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_dot_selection_manager.html",tooltip="Manages the selection of dots in the game. This class uses the Singleton pattern to ensure only one i..."];
+  Node0 -> Node4 [id="edge4_Node000000_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="GameManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_game_manager.html",tooltip="Manages the game flow, including starting levels, ending games, and loading scenes...."];
+  Node0 -> Node5 [id="edge5_Node000000_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="InstructionManager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_instruction_manager.html",tooltip="Manages the display of instructions at the start of the game. It checks player preferences to determi..."];
+  Node0 -> Node6 [id="edge6_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="LevelPlotting",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_level_plotting.html",tooltip="Class responsible for plotting levels in the game UI. It handles the arrangement of image prefabs,..."];
+  Node0 -> Node7 [id="edge7_Node000000_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="PlayerHealth",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_player_health.html",tooltip="Manages the player's health, handling damage from enemies and player death. This class controls the h..."];
+  Node0 -> Node8 [id="edge8_Node000000_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="QuizController2",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_quiz_controller2.html",tooltip="Controls the quiz flow, including displaying questions, processing answers, and managing game state."];
+}

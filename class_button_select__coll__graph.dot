@@ -1,0 +1,17 @@
+digraph "ButtonSelect"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="ButtonSelect",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Manages the selection state of a button in a quiz game. This class handles button color changes to in..."];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="MonoBehaviour",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [id="edge2_Node000001_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" controller",fontcolor="grey" ];
+  Node3 [id="Node000003",label="QuizController2",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_quiz_controller2.html",tooltip="Controls the quiz flow, including displaying questions, processing answers, and managing game state."];
+  Node2 -> Node3 [id="edge3_Node000003_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node3 [id="edge4_Node000003_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" quizData",fontcolor="grey" ];
+  Node4 [id="Node000004",label="QuizData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_quiz_data.html",tooltip="Container for an array of questions."];
+  Node5 -> Node4 [id="edge5_Node000004_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" questions",fontcolor="grey" ];
+  Node5 [id="Node000005",label="QuestionData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_question_data.html",tooltip="Represents a single question in the quiz, including its text, possible answers, correct answers,..."];
+}
